@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/f29eef3e38.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./form.css">
+  <script src="./form.js" defer></script>
+  <title>Confirm order</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="title">
+      <h2>Confirm order</h2>
+    </div>
+    <form class="form" id="form">
+      <div class="form-control">
+        <label for="fname">Name</label>
+        <input type="text" placeholder="Fill your first name" id="fname">
+        <i class="fa-solid fa-circle-check valid"></i>
+        <i class="fa-solid fa-circle-exclamation invalid"></i>
+        <small>Error message</small>
+      </div>
+
+      <div class="form-control">
+        <label for="surname">Surname</label>
+        <input type="text" placeholder="Fill your surname" id="surname">
+        <i class="fa-solid fa-circle-check valid"></i>
+        <i class="fa-solid fa-circle-exclamation invalid"></i>
+        <small>Error message</small>
+      </div>
+
+      <div class="form-control">
+        <label for="date">Delivery date</label>
+        <input type="date" placeholder="day month year" id="date">
+        <i class="fa-solid fa-circle-check valid"></i>
+        <i class="fa-solid fa-circle-exclamation invalid"></i>
+        <small>Error message</small>
+      </div>
+
+      <div class="form-control">
+        <label for="street">Street</label>
+        <input type="text" placeholder="Fill your street name" id="street">
+        <i class="fa-solid fa-circle-check valid"></i>
+        <i class="fa-solid fa-circle-exclamation invalid"></i>
+        <small>Error message</small>
+      </div>
+
+      <div class="form-control">
+        <label for="house-num">House number</label>
+        <input type="number" placeholder="Fill your house number" id="house-num" min="0">
+        <i class="fa-solid fa-circle-check valid"></i>
+        <i class="fa-solid fa-circle-exclamation invalid"></i>
+        <small>Error message</small>
+      </div>
+
+      <div class="form-control">
+        <label for="flat-num">Flat number</label>
+        <input type="number" placeholder="Fill your flat number" id="flat-num" min="0">
+        <i class="fa-solid fa-circle-check valid"></i>
+        <i class="fa-solid fa-circle-exclamation invalid"></i>
+        <small>Error message</small>
+      </div>
+
+      <div class="radio-control">
+        <div class="radio-item">
+          <input class="radio-input box-shadow" type="radio" name="payment-radio" id="cash" required>
+          <label for="cash">Cash</label>
+        </div>
+        <div class="radio-item">
+          <input class="radio-input box-shadow" type="radio" name="payment-radio" id="card" required>
+          <label for="card">Card</label>
+        </div>
+      </div>
+
+      <button>Complete</button>
+    </form>
+  </div>
+</body>
+
+</html>

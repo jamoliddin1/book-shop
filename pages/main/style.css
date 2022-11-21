@@ -1,0 +1,188 @@
+/* Main styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+i {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Header */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #212529;
+  color: #fff;
+  padding: 25px 60px;
+  margin-bottom: 30px;
+}
+
+.shopping-cart-amount {
+  position: relative;
+  background-color: #fff;
+  color: #212529;
+  font-size: 30px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.shopping-amount {
+  position: absolute;
+  top: -18px;
+  right: -10px;
+  padding: 3px;
+  border-radius: 3px;
+  font-size: 16px;
+  background-color: red;
+  color: #fff ;
+}
+
+/* Cards */
+.bookshop-items {
+  display: grid;
+  grid-template-columns: repeat(4, 223px);
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.book-item {
+  border: 2px solid #212529;
+  border-radius: 4px;
+}
+
+.book-item img {
+  width: 100%;
+  border-radius: 2px 2px 0 0;
+  object-fit: cover;
+  height: 255px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+}
+
+.price-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-amount {
+  display: flex;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.icon-minus {
+  color: red;
+}
+
+.icon-plus {
+  color: green;
+}
+
+/* Carts page title and btn */
+.text-center {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.home-btn,
+.checkout-btn,
+.remove-all-btn {
+  background-color: #212529;
+  color: #fff;
+  border: none;
+  padding: 6px;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.checkout-btn {
+  background-color: green;
+}
+
+.remove-all-btn {
+  background-color: red;
+}
+
+.x-icon {
+  color: red;
+  font-weight: bold;
+}
+
+/* Book cart */
+.book-cart {
+  display: grid;
+  grid-template-columns: repeat(1, 320px);
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+/* Cart item */
+.cart-item {
+  display: flex;
+  border: 2px solid #212529;
+  border-radius: 5px
+}
+
+.cart-item img {
+  object-fit: contain;
+}
+
+.title-price-x {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 195px;
+}
+
+.title-price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.title-price p:first-child {
+  width: 120px;
+}
+
+.cart-item-price {
+  background-color: #212529;
+  color: #fff;
+  border-radius: 4px;
+  padding: 3px 6px;
+}
+
+/* Responsive design */
+/* Cards */
+@media (max-width: 1000px) {
+  .bookshop-items {
+    grid-template-columns: repeat(2, 223px);
+  }
+}
+
+@media (max-width: 500px) {
+  .bookshop-items {
+    grid-template-columns: repeat(1, 223px)
+  }
+}
